@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Crear un coche</title>
 <link rel="StyleSheet" href="css/styles.css" type="text/css">
+<script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
 <br>
@@ -17,24 +18,24 @@
 		</nav>
 		</div>
 		<br><br>
-	<form action="CreaCoche" method="POST">
+	<form id="form" action="CreaCoche" method="POST" onsubmit="return comprobar(this)">
 		<h2>Crear un nuevo coche</h2><br>
 		Marca:<br/>
-		<input type="text" name="marca" /><br/>
+		<input type="text" id="marca" name="marca" /><br/>
 		Color:<br/>
-		<input type="text" name="color" /><br/>
+		<input type="text" id="color" name="color" /><br/>
 		Matrícula:<br/>
-		<input type="text" name="matricula" /><br/>
+		<input id="matricula" type="text" name="matricula" /><br/>
 		Número de ruedas:<br/>
-		<input type="text" name="numRuedas" /><br/>
-		Tiene motor?:<br/>
-		<input type="text" name="motor" /><br/>
+		<input id="numRuedas" type="number" name="numRuedas" /><br/>
+		
 		Es automático?:<br/>
-		<input type="text" name="auto" /><br/>
+		<input type="radio" id="auto" name="auto" value="true" checked/>Si
+		<input type="radio" id="auto" name="auto" value="false" />No<br/>
 		Consumo:<br/>
-		<input type="text" name="consumo" /><br/>
+		<input type="number" id="consumo" name="consumo" /><br/>
 		<br/>
-		<input type="submit" value="Enviar" />
+		<input type="submit" name="submit" value="Enviar"/>
 	</form>
 	<br><br>
 	<footer>

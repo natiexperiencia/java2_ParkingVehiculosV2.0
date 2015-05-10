@@ -9,4 +9,44 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Borrar</display-name>
+    <servlet-name>Borrar</servlet-name>
+    <servlet-class>Borrar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Borrar</servlet-name>
+    <url-pattern>/Borrar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Buscar</display-name>
+    <servlet-name>Buscar</servlet-name>
+    <servlet-class>Buscar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Buscar</servlet-name>
+    <url-pattern>/Buscar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreaCoche</display-name>
+    <servlet-name>CreaCoche</servlet-name>
+    <servlet-class>CreaCoche</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreaCoche</servlet-name>
+    <url-pattern>/CreaCoche</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Listar</display-name>
+    <servlet-name>Listar</servlet-name>
+    <servlet-class>Listar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Listar</servlet-name>
+    <url-pattern>/Listar</url-pattern>
+  </servlet-mapping>
 </web-app>

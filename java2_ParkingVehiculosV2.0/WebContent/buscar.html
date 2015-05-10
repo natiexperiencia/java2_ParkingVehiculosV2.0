@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Buscar coche</title>
 <link rel="StyleSheet" href="css/styles.css" type="text/css">
+<script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
 <br>
@@ -18,9 +19,9 @@
 		</div>
 		<br><br>
 	<h1>Buscar coche</h1>
-	<form action="Buscar" method="POST">
+	<form action="Buscar" method="POST" onsubmit="return comprobarMatricula(this)">
 		Ingresa la matrícula:<br/>
-		<input type="text" name="matricula" />
+		<input type="text" id="matricula" name="matricula" />
 		<br/>
 		<input type="submit" value="Enviar" />
 	</form>
